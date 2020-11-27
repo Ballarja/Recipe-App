@@ -5,14 +5,14 @@
     android:id="@+id/RecipeApp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D9000000"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/RecipeHeader"
         android:layout_width="416dp"
         android:layout_height="143dp"
-        android:background="#7D0099CC"
+        android:background="@color/teal_700"
         android:gravity="center_horizontal|center_vertical"
         android:text="@string/recipesHeader"
         android:textAlignment="center"
@@ -26,13 +26,13 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="407dp"
-        android:layout_height="37dp"
-        android:background="#7D0099CC"
-        android:text="@string/recipesFooter"
-        android:textColor="@color/white"
+        android:layout_width="416dp"
+        android:layout_height="29dp"
+        android:background="@color/teal_700"
         android:gravity="center_horizontal|center_vertical"
+        android:text="@string/recipesFooter"
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -40,7 +40,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/BtnActivityOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="55dp"
@@ -58,25 +58,22 @@
         app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="107dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginBottom="64dp"
-        android:ems="10"
-        android:importantForAutofill="no"
-        android:inputType="textPersonName"
-        android:labelFor="@id/editTextTextPersonName"
-        android:text="@string/new_recipe_for_the_day"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+    <TextView
+        android:id="@+id/dailyMessage"
+        android:layout_width="409dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="65dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/dailyMessage"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/BtnActivityOne"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RecipeHeader" />
+        app:layout_constraintTop_toBottomOf="@+id/RecipeHeader"
+        tools:text="Recipe for the day !!!" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
