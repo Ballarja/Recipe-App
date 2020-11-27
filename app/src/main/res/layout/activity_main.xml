@@ -2,21 +2,81 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RecipeApp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D9000000"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/open_sans"
-        android:text="Daily Groceries"
-        android:textColor="@color/black"
-        android:textSize="24sp"
+        android:id="@+id/RecipeHeader"
+        android:layout_width="416dp"
+        android:layout_height="143dp"
+        android:background="#7D0099CC"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/recipesHeader"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="54sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="407dp"
+        android:layout_height="37dp"
+        android:background="#7D0099CC"
+        android:text="@string/recipesFooter"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal|center_vertical"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="127dp"
+        android:background="@drawable/nutella_pancakes"
+        android:enabled="false"
+        android:foreground="@drawable/nutella_pancakes"
+        android:onClick="isPressed"
+        app:backgroundTint="#673AB7"
+        app:icon="@drawable/nutella_pancakes"
+        app:iconTint="@color/material_on_background_disabled"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="64dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:labelFor="@id/editTextTextPersonName"
+        android:text="@string/new_recipe_for_the_day"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RecipeHeader" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
