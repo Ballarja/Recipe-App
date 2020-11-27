@@ -1,3 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Recipe_App</string>
+    <string name="new_recipe_for_the_day">New recipe for the day !!!</string>
+    <string name="recipesHeader">Recipes</string>
+    <string name="recipesFooter">Recipes</string>
+    <string name="nutellapancakes">nutellaPancakes</string>
 </resources>
