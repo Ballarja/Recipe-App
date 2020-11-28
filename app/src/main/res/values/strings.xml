@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="new_recipe_for_the_day">New recipe for the day !!!</string>
     <string name="recipesHeader">Recipes</string>
     <string name="recipesFooter">Recipes</string>
     <string name="nutellapancakes">nutellaPancakes</string>
+    <string name="pancakeImage">pancakeImage</string>
+    <string name="dailyMessage">New recipe for the day !!!</string>
 </resources>
