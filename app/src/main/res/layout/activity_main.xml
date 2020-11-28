@@ -50,7 +50,7 @@
         android:enabled="false"
         android:foreground="@drawable/nutella_pancakes"
         android:linksClickable="false"
-        android:onClick="isPressed"
+        android:onClick="openRecipe"
         app:backgroundTint="#673AB7"
         app:icon="@drawable/nutella_pancakes"
         app:iconTint="@color/material_on_background_disabled"
