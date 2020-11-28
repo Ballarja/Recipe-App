@@ -47,7 +47,7 @@
         android:layout_marginEnd="55dp"
         android:layout_marginBottom="127dp"
         android:background="@drawable/nutella_pancakes"
-        android:enabled="false"
+        android:enabled="true"
         android:foreground="@drawable/nutella_pancakes"
         android:linksClickable="false"
         android:onClick="openRecipe"
