@@ -49,6 +49,7 @@
         android:background="@drawable/nutella_pancakes"
         android:enabled="false"
         android:foreground="@drawable/nutella_pancakes"
+        android:linksClickable="false"
         android:onClick="isPressed"
         app:backgroundTint="#673AB7"
         app:icon="@drawable/nutella_pancakes"
