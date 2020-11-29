@@ -1,63 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/RecipeApp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/RecipeHeader"
-        android:layout_width="416dp"
-        android:layout_height="143dp"
-        android:background="@color/teal_700"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="@string/recipesHeader"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="54sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="416dp"
-        android:layout_height="29dp"
-        android:background="@color/teal_700"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="@string/recipesFooter"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/BtnActivityOne"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="55dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginBottom="127dp"
-        android:background="@drawable/nutella_pancakes"
-        android:enabled="false"
-        android:foreground="@drawable/nutella_pancakes"
-        android:linksClickable="false"
-        android:onClick="openRecipe"
-        app:backgroundTint="#673AB7"
-        app:icon="@drawable/nutella_pancakes"
-        app:iconTint="@color/material_on_background_disabled"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.518"
-        app:layout_constraintStart_toStartOf="parent" />
+    <SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="409dp"
+        android:layout_height="53dp"
+        android:hint="@string/searchRecipe"/>
 
     <TextView
         android:id="@+id/dailyMessage"
@@ -70,11 +27,34 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/BtnActivityOne"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RecipeHeader"
+        android:layout_below="@id/search_bar"
         tools:text="Recipe for the day !!!" />
 
+    <Button
+        android:id="@+id/BtnActivityOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginBottom="127dp"
+        android:background="@drawable/nutella_pancakes"
+        android:enabled="true"
+        android:foreground="@drawable/nutella_pancakes"
+        android:linksClickable="false"
+        android:onClick="openRecipe"
+        app:backgroundTint="#673AB7"
+        app:icon="@drawable/nutella_pancakes"
+        app:iconTint="@color/material_on_background_disabled" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="416dp"
+        android:layout_height="29dp"
+        android:background="@color/teal_700"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/recipesFooter"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

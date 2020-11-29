@@ -5,4 +5,5 @@
     <string name="nutellapancakes">nutellaPancakes</string>
     <string name="pancakeImage">pancakeImage</string>
     <string name="dailyMessage">New recipe for the day !!!</string>
+    <string name= "searchRecipe">Search Recipe</string>
 </resources>
