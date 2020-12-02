@@ -10,6 +10,9 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
+    <include
+        layout="@layout/appbar"
+
     <SearchView
         android:id="@+id/search_bar"
         android:layout_width="409dp"
