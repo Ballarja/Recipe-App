@@ -14,7 +14,11 @@
         android:id="@+id/search_bar"
         android:layout_width="409dp"
         android:layout_height="53dp"
-        android:hint="@string/searchRecipe"/>
+        android:hint="@string/searchRecipe"
+        android:onClick="searchRecipe"
+        android:enabled="true"
+
+        />
 
     <TextView
         android:id="@+id/dailyMessage"
@@ -45,16 +49,5 @@
         app:icon="@drawable/nutella_pancakes"
         app:iconTint="@color/material_on_background_disabled" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="416dp"
-        android:layout_height="29dp"
-        android:background="@color/teal_700"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="@string/recipesFooter"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:textStyle="bold" />
 
 </LinearLayout>
