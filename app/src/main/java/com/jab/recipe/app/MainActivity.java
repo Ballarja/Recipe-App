@@ -2,6 +2,7 @@ package com.jab.recipe.app;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,18 +31,20 @@ public class MainActivity extends AppCompatActivity {
         String url = "https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata";
 
         new AsyncHttpClient().get(url, new AsyncHttpResponseHandler() {
+            String jsonResponse;
+
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-                String string = new String(responseBody);
+                jsonResponse = new String(responseBody);
             }
 
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-
+                jsonResponse = new String(responseBody);
             }
+
         });
     }
-
 
 }
 
