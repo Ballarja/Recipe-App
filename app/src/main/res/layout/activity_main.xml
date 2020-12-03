@@ -10,6 +10,19 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
+    <androidx.appcompat.widget.Toolbar
+        android:layout_height="?actionBarSize"
+        android:layout_width="412dp"
+        android:id="@+id/toolbar"
+        android:background="@color/design_default_color_primary_dark"
+        app:title="@string/meanCuisine"
+        app:titleMarginStart="30dp"
+        app:titleTextColor="@color/white"
+        app:logo="@drawable/ic_menu_24"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+
+
     <SearchView
         android:id="@+id/search_bar"
         android:layout_width="409dp"
@@ -31,7 +44,6 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="24sp"
-        android:layout_below="@id/search_bar"
         tools:text="Recipe for the day !!!" />
 
     <Button
@@ -48,6 +60,12 @@
         app:backgroundTint="#673AB7"
         app:icon="@drawable/nutella_pancakes"
         app:iconTint="@color/material_on_background_disabled" />
+
+    <TextView
+        android:id="@+id/textRecipe"
+        android:layout_width="409dp"
+        android:layout_height="125dp"
+        android:text="@string/textRecipe" />
 
 
 </LinearLayout>

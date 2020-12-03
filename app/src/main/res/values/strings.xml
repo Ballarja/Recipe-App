@@ -6,4 +6,6 @@
     <string name="pancakeImage">pancakeImage</string>
     <string name="dailyMessage">New recipe for the day !!!</string>
     <string name= "searchRecipe">Search Recipe</string>
+    <string name= "meanCuisine">Mean Cuisine</string>
+    <string name="textRecipe"></string>
 </resources>
